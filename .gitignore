@@ -1,0 +1,12 @@
+# Environment files
+.env
+
+# Binary/Executable files
+*.exe
+
+# Git metadata
+.DS_Store
+Thumbs.db
+
+# Project specific
+fastapiserver+ga/.env
