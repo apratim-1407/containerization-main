@@ -2,8 +2,8 @@
 
 **Student** — Apratim Saxena  
 **SAP ID** — 500119616  
-**Repository** — [`adishri2005/containerization-devops`](https://github.com/adishri2005/containerization-devops)  
-**Docker Image** — [`adishri2005/fastapi-app:v0.1`](https://hub.docker.com/r/adishri2005/fastapi-app)  
+**Repository** — [`apratim-1407/containerization-main`](https://github.com/apratim-1407/containerization-main)  
+**Docker Image** — [`apratim14/fastapi-app:v0.1`](https://hub.docker.com/r/apratim14/fastapi-app)  
 **Audit Date** — 2026-04-09
 
 ---
@@ -27,14 +27,14 @@ No corrections required.
 
 | # | Check | File | Status |
 |---|---|---|:---:|
-| 1.1 | `.env` contains `DOCKERTOKEN=tokengeneratedfromdockerhub` | [`fastapiserver+ga/.env`](https://github.com/adishri2005/containerization-devops/blob/main/fastapiserver+ga/.env) | Pass |
-| 1.2 | `.gitignore` explicitly ignores `.env` | [`fastapiserver+ga/.gitignore`](https://github.com/adishri2005/containerization-devops/blob/main/fastapiserver+ga/.gitignore) | Pass |
+| 1.1 | `.env` contains `DOCKERTOKEN=tokengeneratedfromdockerhub` | [`fastapiserver+ga/.env`](https://github.com/apratim-1407/containerization-main/blob/main/fastapiserver+ga/.env) | Pass |
+| 1.2 | `.gitignore` explicitly ignores `.env` | [`fastapiserver+ga/.gitignore`](https://github.com/apratim-1407/containerization-main/blob/main/fastapiserver+ga/.gitignore) | Pass |
 
 ---
 
 ## 2 — Base Application Code
 
-**File** — [`fastapiserver+ga/main.py`](https://github.com/adishri2005/containerization-devops/blob/main/fastapiserver+ga/main.py)
+**File** — [`fastapiserver+ga/main.py`](https://github.com/apratim-1407/containerization-main/blob/main/fastapiserver+ga/main.py)
 
 | # | Check | Status |
 |---|---|:---:|
@@ -48,7 +48,7 @@ No corrections required.
 
 ## 3 — Dependencies
 
-**File** — [`fastapiserver+ga/requirements.txt`](https://github.com/adishri2005/containerization-devops/blob/main/fastapiserver+ga/requirements.txt)
+**File** — [`fastapiserver+ga/requirements.txt`](https://github.com/apratim-1407/containerization-main/blob/main/fastapiserver+ga/requirements.txt)
 
 | # | Check | Status |
 |---|---|:---:|
@@ -58,7 +58,7 @@ No corrections required.
 
 ## 4 — Dockerization
 
-**File** — [`fastapiserver+ga/Dockerfile`](https://github.com/adishri2005/containerization-devops/blob/main/fastapiserver+ga/Dockerfile)
+**File** — [`fastapiserver+ga/Dockerfile`](https://github.com/apratim-1407/containerization-main/blob/main/fastapiserver+ga/Dockerfile)
 
 | # | Check | Status |
 |---|---|:---:|
@@ -73,14 +73,14 @@ No corrections required.
 
 ## 5 — CI/CD Pipeline
 
-**File** — [`.github/workflows/DockerBuild.yml`](https://github.com/adishri2005/containerization-devops/blob/main/.github/workflows/DockerBuild.yml)
+**File** — [`.github/workflows/DockerBuild.yml`](https://github.com/apratim-1407/containerization-main/blob/main/.github/workflows/DockerBuild.yml)
 
 | # | Check | Status |
 |---|---|:---:|
 | 5.1 | Triggered on `push`, runs on `ubuntu-latest` | Pass |
 | 5.2 | Uses `actions/checkout@v1` | Pass |
 | 5.3 | DockerHub login via `secrets.DOCKERTOKEN` piped to `docker login` | Pass |
-| 5.4 | Builds and pushes `adishri2005/fastapi-app:v0.1` | Pass |
+| 5.4 | Builds and pushes `apratim14/fastapi-app:v0.1` | Pass |
 
 ---
 
@@ -88,9 +88,9 @@ No corrections required.
 
 | Metric | Value |
 |---|---|
-| GitHub Actions Run | [`#1` — Success](https://github.com/adishri2005/containerization-devops/actions) |
+| GitHub Actions Run | [`#1` — Success](https://github.com/apratim-1407/containerization-main/actions) |
 | Duration | 1m 15s |
-| Docker Hub Image | [`adishri2005/fastapi-app:v0.1`](https://hub.docker.com/r/adishri2005/fastapi-app) — **Active** |
+| Docker Hub Image | [`apratim14/fastapi-app:v0.1`](https://hub.docker.com/r/apratim14/fastapi-app) — **Active** |
 | Image Size | ~251 MB |
 | Image Digest | `sha256:696590b96a84...` |
 
